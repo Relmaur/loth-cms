@@ -1,6 +1,6 @@
 <?php
 // This include below will go all the way through the includes folder files, so in there all can use the variable $connection (this is because everything there is being pulled here).
-include "includes/mysql/db-connection.php";
+include "includes/db/mysql/db-connection.php";
 include "includes/head.php";
 include "includes/navigation.php";
 include "includes/footer.php";

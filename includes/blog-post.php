@@ -23,8 +23,8 @@ function get_blog_post($postQuery, $postNumber)
 ?>
 
     <!-- Single Blog Structure -->
-    <div class="post border border-black rounded-md min-w-[180px] hover:cursor-pointer">
-        <img src="<?php echo $the_image_url; ?>" alt="" class="post-image mx-auto mb-3 w-full max-h-[250px] object-cover">
+    <div class="post border border-black rounded-md sm:max-w-full mx-auto min-w-[180px] hover:cursor-pointer">
+        <img src="<?php echo $the_image_url; ?>" alt="" class="post-image mx-auto mb-3 w-full h-[200px] max-h-[250px] object-cover">
         <div class="post-body text-center p-5">
             <h2 class="post-title text-darkblue no-underline text-2xl"><a href="#"><?php echo $the_title; ?></a></h2>
             <div class="post-metadata flex justify-center">

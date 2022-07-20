@@ -1,15 +1,22 @@
 <?php
+
 include "blog-post.php";
 ?>
 
 <?php
 
+/*========== MySQL method ==========*/
 /* We can use $connection here since in index.php is being included. (And this php is also being used in there) */
 $query = "SELECT * FROM posts";
 $query_db = mysqli_query($connection, $query); 
 
 /* mysqli_fetch_all($query, MYSQLI_ASSOC) fetches all the entries of the queried table, in the format: Array(0 => Array(row_1), 1 => Array(row_2), 2 => Array(row_3),... n => Array(row_n)). MYSQLI_ASSOC gives the array a more clean and accessible format. */
 $posts_array = mysqli_fetch_all($query_db, MYSQLI_ASSOC);
+/*========== ...MySQL method ==========*/
+
+/*========== SQLite method ==========*/
+
+/*========== ...SQLite method ==========*/
 
 ?>
 
